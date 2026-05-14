@@ -1,6 +1,16 @@
 export default function Index({ invoices }) {
     return (
+        <div>
+            <h1>Invoices</h1>
+            <p>Total: {invoices.length}</p>
+        </div>
+    );
+}
+
+export default function Index({ invoices }) {
+    return (
         <div className="px-4 md:px-8 py-6">
+            
             {/* Header */}
             <div className="flex flex-col gap-1 mb-6">
                 <h1 className="text-2xl font-bold text-slate-900">

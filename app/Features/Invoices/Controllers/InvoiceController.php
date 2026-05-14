@@ -14,7 +14,7 @@ class InvoiceController extends Controller
         $invoices = Invoice::latest()->get();
 
         return Inertia::render('Features/Invoices/Pages/Index', [
-            'invoices' => [],
+            'invoices' => $invoices,
         ]);
     }
 
