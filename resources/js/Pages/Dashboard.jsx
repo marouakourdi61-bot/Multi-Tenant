@@ -1,6 +1,7 @@
 import DashboardLayout from "../Layouts/DashboardLayout";
 import MetricCard from "../Components/MetricCard";
 import InvoiceStatus from "../Components/InvoiceStatus";
+import EmptyState from "../Components/EmptyState";
 
 export default function Index() {
     return (
