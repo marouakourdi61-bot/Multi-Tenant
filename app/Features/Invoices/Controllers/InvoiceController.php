@@ -1,8 +1,9 @@
 <?php
+namespace App\Features\Invoices\Controllers;
 
-namespace App\Http\Controllers;
+use App\Http\Controllers\Controller;
 
-use App\Models\Invoice;
+use App\Features\Invoices\Models\Invoice;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
 
@@ -13,7 +14,7 @@ class InvoiceController extends Controller
         $invoices = Invoice::latest()->get();
 
         return Inertia::render('Features/Invoices/Pages/Index', [
-            'invoices' => $invoices
+            'invoices' => [],
         ]);
     }
 

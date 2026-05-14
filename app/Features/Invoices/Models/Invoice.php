@@ -1,8 +1,9 @@
 <?php
 
-namespace App\Models;
+namespace App\Features\Invoices\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Models\User;
 
 class Invoice extends Model
 {
