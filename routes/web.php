@@ -29,6 +29,9 @@ Route::middleware('auth')->group(function () {
 
     Route::get('/invoices', [InvoiceController::class, 'index'])
     ->name('invoices.index');
+
+    Route::get('/invoices/create', [InvoiceController::class, 'create']);
+    Route::post('/invoices', [InvoiceController::class, 'store']);
 });
 
 require __DIR__.'/auth.php';

@@ -10,11 +10,21 @@ class Invoice extends Model
     protected $fillable = [
         'user_id',
         'invoice_number',
-        'client_name',
+        'recipient',
+        'currency',
+        'vat',
+        'items',
+        'notes',
+        'concluding_text',
         'total',
         'status',
         'issue_date',
         'due_date',
+    ];
+
+    protected $casts = [
+        'items' => 'array',
+        'vat' => 'boolean',
     ];
 
     public function user()
