@@ -9,6 +9,7 @@ export default function Create() {
         currency: 'MAD',
         vat: false,
         items: [
+            
             {
                 qty: 1,
                 type: 'Service',
